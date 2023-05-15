@@ -1,57 +1,71 @@
-<div class="container">
-  <div class="row">
-    <div class="wide-col col-xs-12">
-      <!-- PAGE COMPONENT MARKDOWN -->
-      <div class="spc demos  ">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="fade in code">
-          <h2>Example</h2>
-          <span class="intro">Try PredictiveAddress yourself in our form below.</span>
-          <form action="." onsubmit="return false;" novalidate="true">
-            <div class="form-group data8-pa-container data8-pa-focused">
-              <input class="form-control data8-predictiveaddress" id="address1" placeholder="Line 1"
-                aria-autocomplete="list" autocomplete="nope">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="address2" placeholder="Line 2">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="address3" placeholder="Line 3">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="city" placeholder="City">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="county" placeholder="County">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="postcode" placeholder="Postcode">
-            </div>
-          </form>
-          <link rel="stylesheet" href="https://webservices.data-8.co.uk/content/predictiveaddress.css">
-          <script type="text/javascript"
-            src="https://webservices.data-8.co.uk/javascript/predictiveaddress.js"></script>
-          <script type="text/javascript">
-            var txt = document.getElementById('address1');
-            new data8.predictiveaddressui(txt, {
-              // Change this to your own Ajax key
-              ajaxKey: 'NVI9-BAH3-PUXM-CACJ',
-              fields: [
-                { element: 'address1', field: 'line1' },
-                { element: 'address2', field: 'line2' },
-                { element: 'address3', field: 'line3' },
-                { element: 'city', field: 'town' },
-                { element: 'county', field: 'county' },
-                { element: 'postcode', field: 'postcode' }
-              ]
-            });
-          </script>
-          <p><a id="Configuration"></a></p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="wide-col col-xs-12">
+        <!-- PAGE COMPONENT MARKDOWN -->
+        <div class="spc demos  ">
+
+          <div class="fade in code">
+            <h2>Example</h2>
+            <span class="intro">Try PredictiveAddress yourself in our form below.</span>
+            <form action="." onsubmit="return false;" novalidate="true">
+              <div class="form-group data8-pa-container data8-pa-focused">
+                <input class="form-control data8-predictiveaddress" id="address1" placeholder="Line 1"
+                  aria-autocomplete="list" autocomplete="nope">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="address2" placeholder="Line 2">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="address3" placeholder="Line 3">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="city" placeholder="City">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="county" placeholder="County">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="postcode" placeholder="Postcode">
+              </div>
+            </form>
+            <link rel="stylesheet" href="https://webservices.data-8.co.uk/content/predictiveaddress.css">
+            <script type="text/javascript"
+              src="https://webservices.data-8.co.uk/javascript/predictiveaddress.js"></script>
+            <script type="text/javascript">
+              var txt = document.getElementById('address1');
+              new data8.predictiveaddressui(txt, {
+                // Change this to your own Ajax key
+                ajaxKey: 'NVI9-BAH3-PUXM-CACJ',
+                fields: [
+                  { element: 'address1', field: 'line1' },
+                  { element: 'address2', field: 'line2' },
+                  { element: 'address3', field: 'line3' },
+                  { element: 'city', field: 'town' },
+                  { element: 'county', field: 'county' },
+                  { element: 'postcode', field: 'postcode' }
+                ]
+              });
+            </script>
+            <p><a id="Configuration"></a></p>
+
+          </div>
 
         </div>
-
+        <!--// PAGE COMPONENT MARKDOWN -->
       </div>
-      <!--// PAGE COMPONENT MARKDOWN -->
     </div>
   </div>
-</div>
+</body>
+
+</html>
